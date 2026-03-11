@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zauq Cafe Kotmomin</title>
+  <style>
+    body { font-family: Arial; margin:0; background:#fff; color:#333; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1920x1080/FFD700/000000?text=Zauq+Cafe'); height:100vh; background-size:cover; color:white; text-align:center; padding-top:200px; }
+    h1 { font-size:4rem; margin:0; }
+    .tagline { font-size:2rem; }
+    section { padding:60px 20px; max-width:1200px; margin:auto; }
+    .menu-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px; }
+    .accordion { margin:10px 0; border:1px solid #ddd; }
+    .accordion summary { background:#FFD700; padding:15px; font-weight:bold; cursor:pointer; }
+    form { max-width:600px; margin:auto; }
+    input, textarea, select { width:100%; padding:12px; margin:10px 0; }
+    button { background:#FFD700; padding:15px; font-size:1.2rem; border:none; cursor:pointer; }
+    footer { background:#111; color:white; padding:30px; text-align:center; }
+  </style>
+</head>
+<body>
+
+  <!-- HOME -->
+  <div class="hero">
+    <h1>Zauq Cafe Kotmomin</h1>
+    <p class="tagline">Elevate Every Bite with Zauq</p>
+    <a href="#menu"><button style="margin:20px">View Menu</button></a>
+    <a href="#reservation"><button>Reserve Now</button></a>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section>
+    <h2 style="text-align:center">Welcome to Zauq Cafe Kotmomin – your ultimate rooftop destination in Kot Momin for authentic Pakistani fast food, mouth-watering cakes & pastries, special Iftar buffets, and refreshing beverages. Experience the perfect blend of rich flavors, cozy ambiance, and warm hospitality in every bite.</h2>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2 style="text-align:center">Our Menu</h2>
+    <div class="menu-grid">
+      **Summary:**
+Fast Foods
+        <p>• Burger - Rs. 350<br>• Fries - Rs. 150<br>• Rolls - Rs. 250</p>
+      **Summary:**
+Cakes & Pastries
+        <p>• Chocolate Cake - Rs. 800<br>• Gulab Jamun Pastry - Rs. 150</p>
+      **Summary:**
+Iftar Buffet
+        <p>• Dates & Pakoras<br>• Samosas & Fruit Chat</p>
+      **Summary:**
+Beverages
+        <p>• Chai - Rs. 80<br>• Lassi - Rs. 150</p>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation" style="background:#f9f9f9">
+    <h2 style="text-align:center">Make a Reservation</h2>
+    <form action="https://formsubmit.co/gc111gc1@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Contact Number (WhatsApp)" required>
+      <input type="email" name="email" placeholder="Email Address">
+      <select name="type">
+        <option>Table Booking</option>
+        <option>Iftar Buffet</option>
+        <option>Event</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Special Requests / Queries"></textarea>
+      <button type="submit">Submit Reservation</button>
+      <input type="hidden" name="_next" value="https://zauqcafekotmomin.github.io/thanks.html">
+    </form>
+    <p style="text-align:center">We reply on WhatsApp within minutes!</p>
+  </section>
+
+  <!-- CONTACT -->
+  <footer>
+    <p>Zauq Cafe Kotmomin • Kot Momin</p>
+    <p>📞 0300-538-19-00</p>
+    <iframe src="https://www.google.com/maps/embed?pb=https://maps.app.goo.gl/5pn7nJ38PVdcGNYUA" width="100%" height="300" style="border:0"></iframe>
+  </footer>
+
+</body>
+</html>
